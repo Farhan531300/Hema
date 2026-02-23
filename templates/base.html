@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Measuring the Pulse of Prosperity</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #e94560;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .header h2 span {
+            color: #e94560;
+        }
+
+        .nav a {
+            color: #a0aec0;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #e94560;
+        }
+
+        .container {
+            padding: 60px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            color: #ffffff;
+        }
+
+        .hero-text h1 span {
+            color: #e94560;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #a0aec0;
+        }
+
+        .btn {
+            background: #e94560;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #c73652;
+        }
+
+        .hero img {
+            width: 350px;
+            filter: drop-shadow(0 0 20px rgba(233,69,96,0.3));
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #a0aec0;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #16213e;
+            color: #4a5568;
+            font-size: 13px;
+            border-top: 1px solid #0f3460;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>🌍 Pulse of <span>Prosperity</span></h2>
+
+        <div class="nav">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/story">Story</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>© 2026 Measuring the Pulse of Prosperity | Economic Freedom Index Analysis | Powered by Tableau Public</p>
+    </footer>
+
+</body>
+</html>

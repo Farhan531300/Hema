@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>📬 Contact</h1>
+
+<p>Have questions or feedback about this project? Feel free to reach out!</p>
+
+<div style="
+    background: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin-top: 30px;
+">
+    <form action="#" method="POST">
+
+        <div style="margin-bottom: 20px;">
+            <label style="display:block; color:#a0aec0; margin-bottom:8px; font-size:14px;">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name"
+                style="width:100%; padding:12px; border-radius:6px; border:1px solid #0f3460;
+                background:#1a1a2e; color:#ffffff; font-size:15px; box-sizing:border-box;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label style="display:block; color:#a0aec0; margin-bottom:8px; font-size:14px;">Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email"
+                style="width:100%; padding:12px; border-radius:6px; border:1px solid #0f3460;
+                background:#1a1a2e; color:#ffffff; font-size:15px; box-sizing:border-box;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label style="display:block; color:#a0aec0; margin-bottom:8px; font-size:14px;">Message</label>
+            <textarea name="message" rows="5" placeholder="Write your message here..."
+                style="width:100%; padding:12px; border-radius:6px; border:1px solid #0f3460;
+                background:#1a1a2e; color:#ffffff; font-size:15px; resize:vertical; box-sizing:border-box;">
+            </textarea>
+        </div>
+
+        <button type="submit"
+            style="background:#e94560; color:white; padding:12px 28px; border:none;
+            border-radius:6px; font-size:16px; font-weight:bold; cursor:pointer;">
+            Send Message →
+        </button>
+
+    </form>
+</div>
+
+{% endblock %}
